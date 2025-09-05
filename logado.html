@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class =  "container-global">
+        <h1>Você está logado</h1>
+        <div class="container-register">
+            <h3>Cadastro de livro </h3>
+            <input type="text" id="titulo" placeholder="Título"><br>
+            <input type="text" id="autor" placeholder="Nome do autor"><br>
+            <input type="text" id="genero" placeholder="Gênero"><br>
+            <input type="text" id="isbn" placeholder="ISBN"><br>
+            <button onclick="criaLivro()"> Cadastrar </button>
+
+        </div>
+        <div class="container-exibe-livro" onclick="exibe()">
+           <h3>Livros Cadastrados</h3>
+           <p id="lista"></p>
+        </div>
+        <button onclick="voltar()">Voltar</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
